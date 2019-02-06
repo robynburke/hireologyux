@@ -47,15 +47,20 @@
  * 1) Neutral colors are grayscale values used throughout the application
  */
 $color-white: #fff;
-$color-gray-02: #f9f9f9;
-$color-gray-07: #eee;
-$color-gray-13: #ddd;
-$color-gray-27: #bbb;
-$color-gray-50: #808080;
-$color-gray-60: #666;
-$color-gray-73: #444;
-$color-gray-93: #131313;
+$color-gray-02: #F9FAFA;
+$color-gray-07: #F7F9F9;
+$color-gray-13: #D6DADC;
+$color-gray-27: #B8BFC2;
+$color-gray-50: #9DA3A8;
+$color-gray-60: #858D93;
+$color-gray-73: #677078;
+$color-gray-93: #4A4A4A;
 $color-black: #000;
+$color-light-blue: #2ECEAA;
+$color-medium-blue: #4290B0;
+$color-dark-blue: #2A5769;
+
+
 
 /**
  * Utility Colors
@@ -82,7 +87,7 @@ $color-utility-warning-light: #fffecf;
 /**
  * Font Family
  */
-$font: "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+$font: 'Lato', sans-serif;
 
 /**
  * Font Sizing
@@ -93,6 +98,13 @@ $font-size-sm-2: 0.85rem;
 $font-size-med: 1rem;
 $font-size-med-2: 1.2rem;
 $font-size-large: 1.4375rem;
+
+/**
+ * Font Weight
+ */
+ $font-weight-light: 300;
+ $font-weight-regular: 400;
+ $font-weight-bold: 700;
 
 
 
@@ -107,6 +119,7 @@ $font-size-large: 1.4375rem;
  */
 $l-max-width: 60rem;
 $l-max-width-narrow: 36rem;
+$l-max-width-full: 100%;
 
 
 

@@ -8,18 +8,18 @@
 .c-text-passage {
 
 	p {
-		margin-bottom: 1rem;
+		margin-bottom: 2rem;
 	}
 
 	/**
 	 * Link within the text passage
 	 */
 	a:not(.c-btn) {
-		color: $color-gray-50;
+		color: $color-medium-blue;
         text-decoration: underline;
 
 		&:hover, &:focus {
-			color: $color-gray-73;
+			color: $color-dark-blue;
 		}
 	}
 
@@ -46,7 +46,7 @@
 	h2 {
 		margin: 2rem 0 0.5rem;
 		color: $color-gray-73;
-		font-weight: bold;
+		font-weight: $font-weight-regular;
 	}
 
 	/**

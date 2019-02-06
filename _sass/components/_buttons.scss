@@ -8,12 +8,12 @@
  */
 .c-btn {
 	display: inline-block;
-	background: $color-gray-73;
+	background: $color-medium-blue;
 	border-radius: $border-radius;
 	cursor: pointer;
 	color: $color-white;
 	line-height: 1;
-	font-weight: bold;
+	font-weight: $font-weight-light;
 	padding: 1rem 2rem;
 	border: 0;
 	box-shadow: none; /* 2 */
@@ -21,7 +21,7 @@
 	transition: all $fade-quick ease-out;
 
 	&:hover, &:focus {
-		background: $color-black;
+		background: $color-dark-blue;
 		color: $color-white;
 	}
 

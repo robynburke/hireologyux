@@ -1,0 +1,2020 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11">
+
+	<title>Card list | Hireology UX</title>
+	<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+
+	<link rel="stylesheet" href="/hireologyux/css/main.css">
+	<link rel="stylesheet" href="/hireologyux/css/style-guide.css">
+	<link rel="icon" href="/hireologyux/favicon.ico">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+
+	<link rel="canonical" href="http://localhost:4000/hireologyux/components/lists-and-collections/card-list.html">
+</head>
+
+
+	<body>
+
+        <div class="l-page-layout l-page-layout--two-column-fixed">
+
+            <div class="l-page-layout__secondary">
+
+                <header class="c-header c-header--vertical" role="banner">
+
+    <div class="c-header__inner">
+
+        <h3 class="c-logo">
+
+	<a href="/hireologyux/" class="c-logo__link" rel="home">
+
+		<svg class="c-logo__img" width="241px" height="52px" viewBox="0 0 241 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+			<title>Hireology UX</title>
+<g>
+	<circle fill="#2A5769" cx="24.6" cy="25.5" r="24.4"/>
+	<g>
+		<g>
+			<path fill="#97CA40" d="M25,16.4c0-1-0.8-1.8-1.8-1.8c-1,0-1.8,0.8-1.8,1.8c0,1,0.8,1.8,1.8,1.8C24.2,18.2,25,17.4,25,16.4z"/>
+			<path fill="#97CA40" d="M26.1,11.6c0-0.8-0.7-1.5-1.5-1.5c-0.8,0-1.5,0.7-1.5,1.5c0,0.8,0.7,1.5,1.5,1.5
+				C25.4,13.2,26.1,12.5,26.1,11.6z"/>
+			<path fill="#FFFFFF" d="M23.3,15.5c0.1,0,0.2-0.1,0.2-0.1c0-0.1,0-0.2-0.2-0.2c-0.7,0-1.3,0.6-1.3,1.3c0,0.4,0.2,0.7,0.4,0.9
+				c-0.1-0.1-0.1-0.3-0.1-0.5C22.3,16.3,22.6,15.7,23.3,15.5z"/>
+			<path fill="#FFFFFF" d="M24.5,10.7c0,0,0.1,0,0.1-0.1c0-0.1,0-0.2-0.2-0.2c-0.6,0-1.1,0.5-1.1,1.1c0,0.3,0.1,0.6,0.3,0.8
+				c-0.1-0.1-0.1-0.3-0.1-0.4C23.6,11.4,23.9,10.9,24.5,10.7z"/>
+			<path fill="#97CA40" d="M27.9,14.8c0-0.5-0.4-0.9-0.9-0.9c-0.5,0-0.9,0.4-0.9,0.9c0,0.5,0.4,0.9,0.9,0.9
+				C27.5,15.7,27.9,15.3,27.9,14.8z"/>
+			<path fill="#FFFFFF" d="M27,14.3C27,14.3,27.1,14.3,27,14.3c0.1-0.1,0.1-0.2,0-0.2c-0.4,0-0.7,0.3-0.7,0.7c0,0.2,0.1,0.4,0.2,0.5
+				c0-0.1,0-0.2,0-0.2C26.4,14.7,26.6,14.4,27,14.3z"/>
+		</g>
+		<g>
+			<path fill="#FFFFFF" d="M32.9,33.2c-1.2-1.8-3.8-5.9-4.6-7.1l0-0.3c0-1.1,0-4,0-4.4c0-0.2,0-0.6,0-0.8c0.9-0.1,1.4-0.7,1.4-1.3
+				c0-0.7-0.6-1.4-1.6-1.4c0,0,0,0,0,0c-0.1,0-0.2,0-0.3,0l-0.4,0c-0.2,0-0.4,0-0.6,0h0c-0.5,0-1,0-1.4,0c0.3-0.4,0.5-1,0.5-1.5
+				c0-0.1,0-0.2,0-0.2c0.3,0.2,0.7,0.4,1.1,0.4c1,0,1.8-0.8,1.8-1.8c0-1-0.8-1.8-1.8-1.8c-0.2,0-0.3,0-0.5,0.1
+				c0.3-0.4,0.5-0.9,0.5-1.4c0-1.3-1.1-2.4-2.4-2.4c-1.3,0-2.4,1.1-2.4,2.4c0,1,0.6,1.8,1.5,2.2c-0.2,0-0.3,0-0.5,0
+				c-1.5,0-2.6,1.2-2.6,2.6c0,0.6,0.2,1.1,0.5,1.5c-0.4,0-0.8,0.1-1.1,0.3c-0.3,0.3-0.5,0.6-0.5,1c0,0.6,0.5,1.3,1.4,1.3
+				c0,0.2,0,0.7,0,0.8c0,0.3,0,1.8,0,4.6l0,0.1c-0.6,0.9-3.4,5.3-4.6,7.1c-0.9,1.3-1.6,3.3-0.8,4.7c0.3,0.6,1.1,1.4,2.7,1.4H31
+				c1.6,0,2.4-0.8,2.7-1.4C34.5,36.5,33.8,34.6,32.9,33.2z"/>
+		</g>
+		<path fill="#97CA40" d="M27.1,20c0.1-0.1,0-0.2-0.1-0.2h-4.7c-0.1,0-0.2,0.1-0.1,0.2l1.6,2.7c0.1,0.1,0.1,0.3,0.1,0.5l-1.9,9.1
+			c0,0.1,0,0.3,0.1,0.5l2.6,4.1c0.1,0.1,0.2,0.1,0.3,0l2.6-4.1c0.1-0.1,0.1-0.3,0.1-0.5l-1.9-9.1c0-0.1,0-0.3,0.1-0.5L27.1,20z"/>
+		<path fill="#97CA40" d="M25,16.4c0-1-0.8-1.8-1.8-1.8c-1,0-1.8,0.8-1.8,1.8c0,1,0.8,1.8,1.8,1.8C24.2,18.2,25,17.4,25,16.4z"/>
+		<path fill="#97CA40" d="M26.1,11.6c0-0.8-0.7-1.5-1.5-1.5c-0.8,0-1.5,0.7-1.5,1.5c0,0.8,0.7,1.5,1.5,1.5
+			C25.4,13.2,26.1,12.5,26.1,11.6z"/>
+		<path fill="#FFFFFF" d="M23.3,15.5c0.1,0,0.2-0.1,0.2-0.1c0-0.1,0-0.2-0.2-0.2c-0.7,0-1.3,0.6-1.3,1.3c0,0.4,0.2,0.7,0.4,0.9
+			c-0.1-0.1-0.1-0.3-0.1-0.5C22.3,16.3,22.6,15.7,23.3,15.5z"/>
+		<path fill="#FFFFFF" d="M24.5,10.7c0,0,0.1,0,0.1-0.1c0-0.1,0-0.2-0.2-0.2c-0.6,0-1.1,0.5-1.1,1.1c0,0.3,0.1,0.6,0.3,0.8
+			c-0.1-0.1-0.1-0.3-0.1-0.4C23.6,11.4,23.9,10.9,24.5,10.7z"/>
+		<path fill="#97CA40" d="M27.9,14.8c0-0.5-0.4-0.9-0.9-0.9c-0.5,0-0.9,0.4-0.9,0.9c0,0.5,0.4,0.9,0.9,0.9
+			C27.5,15.7,27.9,15.3,27.9,14.8z"/>
+		<path fill="#FFFFFF" d="M27,14.3C27,14.3,27.1,14.3,27,14.3c0.1-0.1,0.1-0.2,0-0.2c-0.4,0-0.7,0.3-0.7,0.7c0,0.2,0.1,0.4,0.2,0.5
+			c0-0.1,0-0.2,0-0.2C26.4,14.7,26.6,14.4,27,14.3z"/>
+	</g>
+</g>
+<text transform="matrix(1 0 0 1 60 36)" fill="#677078" font-family="''Lato', sans-serif;" font-weight="300" font-size="26px">Hireology</text>
+<text transform="matrix(1 0 0 1 175 36)" fill="#2A5769" font-family="'Lato', sans-serif;" font-weight="300" font-size="26px">UX</text>
+</svg>
+
+<!--end .c-header__logo-->
+
+	</a><!--end c-logo__link-->
+
+</h3><!--end c-logo-->
+
+
+    	<button class="c-btn c-btn--small c-header__nav-btn js-nav-trigger">Menu</button>
+
+    	<div class="c-header__nav-container js-nav-panel">
+
+			<nav class="c-primary-nav" role="navigation">
+
+	<ul class="c-primary-nav__list c-primary-nav__list--flush js-nav-panel" role="tablist" aria-multiselectable="true">
+
+		<li class="c-primary-nav__item">
+			<a href="/hireologyux/getting-started.html" class="c-primary-nav__link ">
+				<span class="c-primary-nav__text">Welcome to UX at Hireology</span>
+			</a>
+		</li><!-- end c-nav__list__item -->
+
+		<li class="c-primary-nav__item ">
+			<a class="c-primary-nav__link c-primary-nav__link--has-children js-nav-dropdown-trigger " href="/hireologyux/about/">
+
+				<span class="c-primary-nav__text">About</span>
+
+				<svg class="c-icon c-primary-nav__icon" aria-hidden="true">
+					<use href="/hireologyux/icons.svg#chevron-right"></use>
+				</svg>
+
+			</a>
+
+			<ul class="c-primary-nav__sublist js-nav-dropdownn ">
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+				<li class="c-primary-nav__item">
+					<a class="c-primary-nav__link " href="/hireologyux/about/">
+                    
+
+                    About UX at Hireology
+
+                    
+					</a>
+				</li>
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+				<li class="c-primary-nav__item">
+					<a class="c-primary-nav__link " href="/hireologyux/about/mission.html">
+                    
+
+                    Mission and Vision
+
+                    
+					</a>
+				</li>
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+				<li class="c-primary-nav__item">
+					<a class="c-primary-nav__link " href="/hireologyux/about/corevalues.html">
+                    
+
+                    Core Values
+
+                    
+					</a>
+				</li>
+				
+
+			
+
+				
+
+			
+
+				
+				<li class="c-primary-nav__item">
+					<a class="c-primary-nav__link " href="/hireologyux/about/team.html">
+                    
+
+                    Team
+
+                    
+					</a>
+				</li>
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+				<li class="c-primary-nav__item">
+					<a class="c-primary-nav__link " href="/hireologyux/about/thoughts.html">
+                    
+
+                    Thoughts
+
+                    
+					</a>
+				</li>
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+
+				
+
+			
+			</ul>
+		</li>
+
+
+		<li class="c-primary-nav__item ">
+
+			<a href="/hireologyux/users/index.html" class="c-primary-nav__link c-primary-nav__link--has-children js-nav-dropdown-trigger ">
+
+				<span class="c-primary-nav__span">User Personas</span>
+
+				<svg class="c-icon c-primary-nav__icon" aria-hidden="true">
+					<use href="/hireologyux/icons.svg#chevron-right"></use>
+				</svg>
+
+			</a>
+
+			<ul class="c-primary-nav__sublist js-nav-dropdown ">
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+					<li class="c-primary-nav__item">
+						<a class="c-primary-nav__link " href="/hireologyux/users/">
+                        
+
+                        <span class="c-primary-nav__text">Overview</span>
+
+                        
+						</a>
+					</li>
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+					<li class="c-primary-nav__item">
+						<a class="c-primary-nav__link " href="/hireologyux/users/ida.html">
+                        
+
+                        Ida
+
+                        
+						</a>
+					</li>
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+			</ul>
+
+		</li><!-- end c-nav__list__item -->
+
+		<li class="c-primary-nav__item ">
+
+			<a href="/hireologyux/content-guide/index.html" class="c-primary-nav__link c-primary-nav__link--has-children js-nav-dropdown-trigger ">
+
+				<span class="c-primary-nav__span">Content Style Guide</span>
+
+				<svg class="c-icon c-primary-nav__icon" aria-hidden="true">
+					<use href="/hireologyux/icons.svg#chevron-right"></use>
+				</svg>
+
+			</a>
+
+			<ul class="c-primary-nav__sublist js-nav-dropdown ">
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+					<li class="c-primary-nav__item">
+						<a class="c-primary-nav__link " href="/hireologyux/content-guide/">
+                        
+
+                        <span class="c-primary-nav__text">Overview</span>
+
+                        
+						</a>
+					</li>
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+					<li class="c-primary-nav__item">
+						<a class="c-primary-nav__link " href="/hireologyux/content-guide/goals.html">
+                        
+
+                        Goals and Principles
+
+                        
+						</a>
+					</li>
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+			</ul>
+
+		</li><!-- end c-nav__list__item -->
+
+		<li class="c-primary-nav__item ">
+
+			<a href="/hireologyux/ui-patterns/index.html" class="c-primary-nav__link c-primary-nav__link--has-children js-nav-dropdown-trigger ">
+
+				<span class="c-primary-nav__span">UI Pattern Library</span>
+
+				<svg class="c-icon c-primary-nav__icon" aria-hidden="true">
+					<use href="/hireologyux/icons.svg#chevron-right"></use>
+				</svg>
+
+			</a>
+
+			<ul class="c-primary-nav__sublist js-nav-dropdown ">
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+					<li class="c-primary-nav__item">
+						<a class="c-primary-nav__link " href="/hireologyux/ui-patterns/">
+                        
+
+                        <span class="c-primary-nav__text">Overview</span>
+
+                        
+						</a>
+					</li>
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+					<li class="c-primary-nav__item">
+						<a class="c-primary-nav__link " href="/hireologyux/ui-patterns/branding.html">
+                        
+
+                        Branding
+
+                        
+						</a>
+					</li>
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+			</ul>
+
+		</li><!-- end c-nav__list__item -->
+
+		
+
+	</ul><!-- end c-nav__list -->
+
+</nav><!-- end c-nav -->
+
+
+    	</div><!--end c-header__nav-container-->
+
+    </div><!--end c-header__inner-->
+
+</header><!--end c-header-->
+
+
+            </div><!--end l-page-layout__secondary-->
+
+            <div class="l-page-layout__main">
+
+                <main role="main">
+                	<div class="l-container">
+
+                        
+<ol class="c-breadcrumbs">
+
+	<li class="c-breadcrumbs__item">
+		<a href="/hireologyux/components" class="c-breadcrumbs__link">Components</a>
+	</li><!-- end c-breadcrumbs__item -->
+
+	
+	<li class="c-breadcrumbs__item">
+		<a href="/hireologyux/components/lists-and-collections" class="c-breadcrumbs__link">Lists and collections</a>
+	</li><!-- end c-breadcrumbs__item -->
+	
+
+</ol><!-- end c-breadcrumbs -->
+
+
+
+<div class="c-page-header">
+
+	<h1 class="c-page-header__title">Card list </h1>
+	
+	<div class="c-page-header__desc">
+		<p>Card description</p>
+
+	</div>
+	
+
+</div><!-- end c-page-header -->
+
+
+<section class="c-section">
+
+	<div class="c-tabs js-tabs">
+
+		<ul class="c-tabs__list">
+			
+			<li class="c-tabs__item">
+				<a href="#tab-default-card-list" class="c-tabs__link js-tab" data-code-tabs="tab-default-card-list">Default card list</a>
+			</li><!-- end c-tabs__item -->
+			
+
+
+		</ul><!-- end c-tabs__list -->
+
+		<div class="c-tabs__body">
+
+			
+			<div class="c-tabs__panel js-tabs-panel" id="tab-default-card-list">
+
+				<section class="c-section">
+					<header class="c-section__header">
+						<h5 class="c-section__title">Default card list <code class="u-font-size-med">c-card-list</code></h5>
+						<div><p>Card list description</p>
+ </div>
+					</header>
+
+					
+
+					
+
+					
+
+					
+
+					
+
+					<div class="iffframe">
+
+						<iframe class="iffframe__iframe" frameBorder="0" width="100%" height="100%" src="/hireologyux/patterns/01-molecules-02-blocks-card/01-molecules-02-blocks-card.rendered.html"></iframe>
+
+						<div class="iffframe__handle"></div>
+
+					</div><!--end iffframe-->
+					
+
+				</section><!--end section-->
+
+			</div><!--end c-tabs__panel-->
+			
+
+		</div><!--end c-tabs__body-->
+
+	</div><!--end c-tabs-->
+
+	<ul class="c-tabs-list js-tabs-list">
+		
+
+		
+		<li class="c-tabs-list__item js-tabs-list-item" data-code-tabs="tab-default-card-list">
+
+			
+			<div class="c-tabs test-tabs  js-tabs">
+
+				<ul class="c-tabs__list">
+
+					<li class="c-tabs__item">
+						<a href="#html-1" class="c-tabs__link js-tab">HTML</a>
+					</li><!-- end c-tabs__item -->
+
+					<li class="c-tabs__item">
+						<a href="#angular-1" class="c-tabs__link js-tab">Angular</a>
+					</li><!-- end c-tabs__item -->
+
+					<li class="c-tabs__item">
+						<a href="#react-1" class="c-tabs__link js-tab">React</a>
+					</li><!-- end c-tabs__item -->
+
+				</ul><!-- end c-tabs__list -->
+
+				<div class="c-tabs__body ">
+
+					<div class="c-tabs__panel js-tabs-panel" id="html-1">
+
+						
+
+						<div class="pattern-code">
+							<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-1">Copy</button>
+							<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-1">
+<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">&lt;a href="#" class="c-card "&gt;
+
+  &lt;div class="c-card__header"&gt;
+    Card header
+  &lt;/div&gt;
+
+  &lt;div class="c-card__body"&gt;
+
+    &lt;h2 class="c-card__title"&gt;
+      &lt;span class="c-card__title-text"&gt;Card Heading&lt;/span&gt;
+      &lt;svg class="c-icon c-card__icon"&gt;
+				&lt;use href="..&amp;#x2F;..&amp;#x2F;icons.svg#chevron-right"&gt;&lt;/use&gt;
+			&lt;/svg&gt;
+    &lt;/h2&gt;
+    &lt;!-- end c-card__title --&gt;
+
+    &lt;p class="c-card__desc"&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/p&gt;
+
+  &lt;/div&gt;
+  &lt;!-- end c-card__body --&gt;
+
+  &lt;div class="c-card__footer"&gt;
+    Card footer
+  &lt;/div&gt;
+  &lt;!-- end c-card__footer --&gt;
+
+&lt;/a&gt;
+&lt;!-- end c-card --&gt;</code></pre></figure>
+</code></pre>
+						</div>
+
+					</div><!--end c-tabs__panel-->
+
+
+					<div class="c-tabs__panel js-tabs-panel" id="angular-1">
+
+						<div class="pattern-code">
+							<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-1">Copy</button>
+							<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-1">THIS IS ANGULAR CODE</code></pre>
+						</div>
+
+					</div><!--end c-tabs__panel-->
+
+					<div class="c-tabs__panel js-tabs-panel" id="react-1">
+
+						<div class="pattern-code">
+							<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-1">Copy</button>
+							<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-1">THIS IS REACT CODE</code></pre>
+						</div>
+
+					</div><!--end c-tabs__panel-->
+
+				</div><!-- end c-tabs__body-->
+
+			</div><!-- end c-tabs -->
+			
+
+			</li><!-- end c-tabs-list__item -->
+
+		
+
+	</ul><!-- end c-tabs-list -->
+
+</section><!-- end c-section -->
+
+<section class="c-section">
+
+	<div class="c-section-header ">
+
+		<h1 class="c-section-header__title">Usage</h1>
+
+	</div><!-- end c-section-header -->
+
+	<div class="c-text-passage l-linelength-container">
+
+		
+<h4>When to use</h4>
+
+
+<p>Usage description.</p>
+
+
+
+<h4>When to consider an alternative</h4>
+
+
+<p>Alternative usage.</p>
+
+
+
+
+
+	</div><!-- end c-text-passage -->
+
+	<div class="c-table-container">
+
+		<table class="c-table ">
+
+			<thead class="c-table__header">
+
+				<tr class="c-table__header-row">
+				<th scope="col" class="c-table__header-cell ">Class Name</th>
+				<th scope="col" class="c-table__header-cell ">Description</th>
+				</tr><!-- c-table__header-row -->
+
+			</thead><!-- end c-table__header -->
+
+			<tbody class="c-table__body ">
+				
+
+				<tr class="c-table__row ">
+
+					<td class="c-table__cell ">
+						c-hero
+					</td>
+
+					<td class="c-table__cell ">
+						
+						<p>Apply to the hero block’s containing HTML element. This class sets up the background-image handling and text color for the unit. The <code class="highlighter-rouge">c-hero</code> element should have just one immediate child, the <code class="highlighter-rouge">c-hero__body</code> element. Note, too, that the unit’s hero image should be applied as a background image to this <code class="highlighter-rouge">c-hero</code> element.</p>
+
+					</td>
+
+				</tr><!-- end c-table__row -->
+				
+
+				<tr class="c-table__row ">
+
+					<td class="c-table__cell ">
+						c-hero--bare
+					</td>
+
+					<td class="c-table__cell ">
+						
+						<p>Add to the <code class="highlighter-rouge">c-hero</code> element to remove the default gradient overlay from the hero image.</p>
+
+					</td>
+
+				</tr><!-- end c-table__row -->
+				
+
+				<tr class="c-table__row ">
+
+					<td class="c-table__cell ">
+						c-hero--tinted
+					</td>
+
+					<td class="c-table__cell ">
+						
+						<p>Add to the <code class="highlighter-rouge">c-hero</code> element to replace the default gradient overlay with a solid, uniform tint.</p>
+
+					</td>
+
+				</tr><!-- end c-table__row -->
+				
+
+				<tr class="c-table__row ">
+
+					<td class="c-table__cell ">
+						c-hero__body
+					</td>
+
+					<td class="c-table__cell ">
+						
+						<p>Apply to the container for the card body, Which typically includes a title and description (see below) but can include any arbitrary markup including buttons for a call to action. The class manages the card’s background gradient.</p>
+
+					</td>
+
+				</tr><!-- end c-table__row -->
+				
+
+				<tr class="c-table__row ">
+
+					<td class="c-table__cell ">
+						c-hero__title
+					</td>
+
+					<td class="c-table__cell ">
+						
+						<p>Apply to the card’s heading inside the card body. The recommended element for this class is <code class="highlighter-rouge">&lt;h1&gt;</code>.</p>
+
+					</td>
+
+				</tr><!-- end c-table__row -->
+				
+
+				<tr class="c-table__row ">
+
+					<td class="c-table__cell ">
+						c-hero__desc
+					</td>
+
+					<td class="c-table__cell ">
+						
+						<p>Apply to the card’s description text inside the card body. The recommended element for this class is <code class="highlighter-rouge">&lt;p&gt;</code>.</p>
+
+					</td>
+
+				</tr><!-- end c-table__row -->
+				
+
+			</tbody><!-- end c-table__body -->
+
+		</table><!--end c-table-->
+
+	</div><!--end c-table-container-->
+
+</section><!-- end c-section -->
+
+<section class="c-section">
+
+	<div class="c-section-header ">
+
+		<h1 class="c-section-header__title">Fine print</h1>
+
+	</div><!-- end c-section-header -->
+
+	<div class="c-text-passage l-linelength-container">
+		
+        <ul>
+            <li>Version: 0.3</li>
+            <li>Last Updated: April 27, 2017</li>
+            <li>Owner: <a href="#">Jane Doe</a></li>
+        </ul>
+		
+	</div><!-- end c-text-passage -->
+
+	<a href="#" class="c-btn">Discuss this component</a><!-- end c-btn -->
+
+</section><!-- end c-section -->
+
+
+	                </div><!--end l-container-->
+				</main><!--end role=main-->
+
+                <footer class="c-footer" role="contentinfo">
+
+    <ul class="c-footer-nav">
+
+        <li class="c-footer-nav__item">
+            <a href="/hireologyux/about.html" class="c-footer-nav__link">About</a>
+        </li><!--end c-footer-nav__item-->
+
+        <li class="c-footer-nav__item">
+            <a href="/hireologyux/roadmap.html" class="c-footer-nav__link">Roadmap</a>
+        </li><!--end c-footer-nav__item-->
+
+        <li class="c-footer-nav__item">
+            <a href="/hireologyux/release-history" class="c-footer-nav__link">Release History</a>
+        </li><!--end c-footer-nav__item-->
+
+        <li class="c-footer-nav__item">
+            <a href="/hireologyux/contribute.html" class="c-footer-nav__link">Contribute</a>
+        </li><!--end c-footer-nav__item-->
+
+    </ul><!--end c-footer-nav-->
+
+</footer><!--end c-footer-->
+
+<script src="/hireologyux/js/vendor/jquery-3.1.0.min.js"></script>
+<script src="/hireologyux/js/vendor/prism.js"></script>
+<script src="/hireologyux/js/vendor/iframe-resizer.min.js"></script>
+<script src="/hireologyux/js/vendor/clipboard.min.js"></script>
+<script src="/hireologyux/js/style-guide.js"></script>
+
+
+            </div><!--end l-page-layout__main-->
+
+        </div><!--end l--two-column-fixed-->
+
+	</body>
+
+</html>

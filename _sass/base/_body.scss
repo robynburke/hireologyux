@@ -14,9 +14,11 @@ html {
  */
 body {
 	background: $color-white;
-	font: 100%/1.5 $font;
+	font: $font-size-med-2 $font;
+	line-height:2rem;
 	-webkit-text-size-adjust: 100%;
 	color: $color-gray-73;
+	font-weight: $font-weight-light;
 	display: flex;
 	flex-direction: column;
 	height: 100%;

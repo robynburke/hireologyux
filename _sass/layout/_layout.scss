@@ -8,7 +8,7 @@
  *    and centers the container
  */
 .l-container {
-	max-width: $l-max-width;
+	max-width: $l-max-width-full;
 	margin: 0 auto;
 }
 
@@ -29,7 +29,8 @@
  *    kinds of displays
  */
 .l-linelength-container {
-    max-width: 35rem;
+	max-width: 62rem;
+	padding: 2rem 3rem;
 }
 
 
